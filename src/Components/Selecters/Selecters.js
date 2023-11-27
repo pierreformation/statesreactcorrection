@@ -1,7 +1,7 @@
-import "./App.css";
+import "./selecters.css";
 import { useState } from "react";
 
-function App() {
+function Selecters() {
   const [selector, setSelector] = useState(null);
 
   console.log("selector est", selector);
@@ -35,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default Selecters;

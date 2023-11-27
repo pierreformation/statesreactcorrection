@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { useState } from "react";
-import Component1 from "./Component1";
+import "./counters.css";
 
-function App() {
+function Counters() {
   const [number, setNumber] = useState(0);
   const [number2, setNumber2] = useState(0);
 
@@ -64,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default Counters;

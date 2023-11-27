@@ -1,0 +1,17 @@
+.cptbox {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.App > button {
+  width: 50px;
+  font-size: 20px;
+}
