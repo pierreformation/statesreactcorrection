@@ -2,7 +2,6 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [myClass, setMyClass] = useState("orangeSq");
   const [selector, setSelector] = useState(null);
 
   console.log("selector est", selector);
@@ -10,17 +9,6 @@ function App() {
   return (
     <div className="App">
       <div className="selectorContainer">
-        EXERCICE 0 UN SELECTEUR SIMPLE
-        <div
-          className={myClass}
-          onClick={() => {
-            if (myClass === "greenSq") {
-              setMyClass("orangeSq");
-            } else {
-              setMyClass("greenSq");
-            }
-          }}
-        ></div>
         <div className="separator">EXERCICE 1 : 3 SELECTEURS</div>
         <div className="sel3Container">
           <div
