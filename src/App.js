@@ -2,47 +2,29 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [myClass, setMyClass] = useState("orangeSq");
-  const [selector, setSelector] = useState(null);
-
-  console.log("selector est", selector);
+  //   console.log("selector est", selector);
+  const [state1, setState1] = useState("HELLO");
+  const [state2, setState2] = useState(true);
+  const [state3, setState3] = useState(true);
 
   return (
     <div className="App">
-      <div className="selectorContainer">
-        EXERCICE 0 UN SELECTEUR SIMPLE
-        <div
-          className={myClass}
-          onClick={() => {
-            if (myClass === "greenSq") {
-              setMyClass("orangeSq");
-            } else {
-              setMyClass("greenSq");
-            }
-          }}
-        ></div>
-        <div className="separator">EXERCICE 1 : 3 SELECTEURS</div>
-        <div className="sel3Container">
-          <div
-            onClick={() => {
-              setSelector(0);
-            }}
-            className={selector === 0 ? "greenSq" : "orangeSq"}
-          ></div>
-          <div
-            onClick={() => {
-              setSelector(1);
-            }}
-            className={selector === 1 ? "greenSq" : "orangeSq"}
-          ></div>
-          <div
-            onClick={() => {
-              setSelector(2);
-            }}
-            className={selector === 2 ? "greenSq" : "orangeSq"}
-          ></div>
-        </div>
-      </div>
+      {/* TECHNIQUE 1 - affichage du state */}
+      <div className="orangeSq">{state1}</div>
+      {/* TECHNIQUE 2 - Manipulation de classe */}
+      <div className={state2 ? "greenSq" : "orangeSq"}></div>
+      {/* TECHNIQUE 3 - Manipulation de JSX */}
+      {state3 ? <div className="greenSq">3eme</div> : <p>4eme</p>}
+
+      <button
+        onClick={() => {
+          setState1("JOHN");
+          setState2(false);
+          setState3(false);
+        }}
+      >
+        CLICK ME
+      </button>
     </div>
   );
 }
