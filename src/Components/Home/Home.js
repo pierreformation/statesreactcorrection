@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom";
+import "./home.css";
 
-const Home = () => {
+const Menu = () => {
   return (
-    <div>
-      <span>HOME</span>
-      <Link to="counters">COMPTEURS </Link>
-      <Link to="selecters">SELECTERS </Link>
+    <div className="menu">
+      <div className="title">EXERCICES STATES</div>
+      <div>
+        <Link className="menuEl" to="counters">
+          COMPTEURS
+        </Link>
+        <Link className="menuEl" to="selecters">
+          SELECTERS
+        </Link>
+        <Link className="menuEl" to="converters">
+          CONVERTERS
+        </Link>
+      </div>
     </div>
   );
 };
-
-export default Home;
+export default Menu;

@@ -45,3 +45,11 @@
 .separator {
   margin-top: 100px;
 }
+
+.imgselecteurs {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 50%;
+}
