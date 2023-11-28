@@ -12,8 +12,8 @@ const Menu = () => {
         <Link className="menuEl" to="selecters">
           SELECTERS
         </Link>
-        <Link className="menuEl" to="converters">
-          CONVERTERS
+        <Link className="menuEl" to="counters">
+          COMPTEURS
         </Link>
       </div>
     </div>
