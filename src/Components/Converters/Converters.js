@@ -36,8 +36,6 @@ const Converters = () => {
         }}
       />
 
-      {mystate === true ? <div>MODALE</div> : null}
-
       <input
         value={inputDoll}
         onChange={(event) => {

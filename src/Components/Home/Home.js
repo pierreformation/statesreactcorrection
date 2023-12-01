@@ -15,6 +15,9 @@ const Menu = () => {
         <Link className="menuEl" to="counters">
           COMPTEURS
         </Link>
+        <Link className="menuEl" to="popup">
+          POP UP
+        </Link>
       </div>
     </div>
   );
